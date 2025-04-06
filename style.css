@@ -171,6 +171,13 @@ span{
     transition: 0.3s ease;
 }
 
+ .social-media a:hover {
+    transform: scale(1.2) translateY(-8px);
+    background-color: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 20px var(--main-color);
+ }
+
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -228,6 +235,70 @@ span{
     background-color: var(--main-color);
 }
 
+/* Skills section code */
+#Skills{
+    color: var(--main-color);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 4.5rem;
+    padding-bottom: 70px;
+}
+.sub-title span {
+    color: var(--main-color);
+}
+.container {
+    padding: 90px;
+}
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.skills-list .skill{
+    background: var(--second-bg-color);
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    padding: 20px;
+    transition: all 0.3s ease;
+    
+}
+.skills-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.skills-list div h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.skills-list div #{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    display: inline-block;
+}
+
+.skills-list p {
+    font-size: 1.6rem;
+}
+.skills-list a{
+    font-size: 1.6rem;
+}
+.skill:hover {
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px) scale(1.03);
+    cursor: pointer;
+}
+
+
+
 /* Portfolio section code*/
 
 .portfolio {
@@ -236,7 +307,7 @@ span{
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
     align-items: center;
     gap: 2.3rem;
     margin-top: 4.2rem;
@@ -341,13 +412,13 @@ span{
     background: var(--bg-color);
 }
 
-.footer .social {
+.footer .social-media {
     text-align: center;
     padding-bottom: 25px;
     color: var(--main-color);
 }
 
-.footer .social a {
+.footer .social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -362,7 +433,7 @@ span{
     transition: 0.3s ease;
 }
 
-.footer .social a:hover {
+.footer .social-media a:hover {
     transform: scale(1.2) translateY(-8px);
     background: var(--main-color);
     color: var(--text-color);
